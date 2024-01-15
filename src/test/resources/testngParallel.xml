@@ -1,0 +1,20 @@
+<suite name="Lyudmil Suite" parallel="methods" thread-count="4" >
+    <test name="Lyudmil Suite" group-by-instances="true">
+        <classes>
+            <class name="org.example.tests.AddTest" />
+            <class name="org.example.tests.DivideTest" />
+            <class name="org.example.tests.ModuloTest" />
+            <class name="org.example.tests.MultiplyTest" />
+            <class name="org.example.tests.SubtractTest" />
+        </classes>
+        <groups>
+            <run>
+                <include name="addition" />
+                <include name="division" />
+                <include name="modulo" />
+                <include name="multiply" />
+                <include name="subtraction" />
+            </run>
+        </groups>
+    </test>
+</suite>
